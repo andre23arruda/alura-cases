@@ -1,5 +1,6 @@
 import Link from "../src/components/Link"
 import PageTitle from "../src/components/Title"
+import FAQScreen from "../src/screens/FAQScreen"
 
 // export async function getServerSideProps(context) {
 //     console.log('Em modo DEV sempre roda a cada acesso')
@@ -22,31 +23,4 @@ export async function getStaticProps(context) {
     }
 }
 
-export default function FaqPage({ faq }) {
-    // console.log(faq)
-    return (
-        <>
-            <PageTitle>FAQ - Alura Cases</PageTitle>
-
-            <div>
-                <h1>Alura Cases - FAQ</h1>
-
-                <Link href="/">
-                    Voltar a home
-                </Link>
-
-                <ul>
-                    {faq.map(item => (
-                        <li>
-                            <article>
-                                <h2>{ item.question }</h2>
-                                <p>{ item.answer }</p>
-                            </article>
-                        </li>
-
-                    ))}
-                </ul>
-            </div>
-        </>
-    )
-}
+export default FAQScreen
