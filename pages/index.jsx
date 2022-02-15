@@ -1,30 +1,38 @@
-import Link from "next/link";
+import HomeScreen from "../src/screens/HomeScreen";
 
-function Title({ children, as }) {
-    const Tag = as
-    return (
-        <>
-            <Tag>
-                { children }
-            </Tag>
+export default HomeScreen
 
-            <style jsx>{`
-                ${ Tag } {
-                    color: red
-                }
-            `}</style>
-        </>
-    )
-}
 
-export default function HomePage() {
-    return (
-        <div>
-            <Title as="h2">Alura Cases</Title>
+// import Link from "next/link";
+// import Footer from "../src/components/Footer";
 
-            <Link href="/faq" passHref>
-                <a>Ir a FAQ</a>
-            </Link>
-        </div>
-    )
-}
+// function Title({ children, as }) {
+//     const Tag = as
+//     return (
+//         <>
+//             <Tag>
+//                 { children }
+//             </Tag>
+
+//             <style jsx>{`
+//                 ${ Tag } {
+//                     color: red
+//                 }
+//             `}</style>
+//         </>
+//     )
+// }
+
+// export default function HomePage() {
+//     return (
+//         <div>
+//             <Title as="h2">Alura Cases</Title>
+
+//             <Link href="/faq" passHref>
+//                 <a>Ir a FAQ</a>
+//             </Link>
+
+//             <Footer />
+//         </div>
+//     )
+// }

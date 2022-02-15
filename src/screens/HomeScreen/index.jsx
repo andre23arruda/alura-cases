@@ -1,10 +1,11 @@
-import Footer from '../../components/patterns/Footer';
+import Footer from '../../components/Footer';
 import Link from '../../components/Link';
-import { theme } from '../../theme/theme';
-import { Image, Box, Text, Icon, Input, Button } from '../../theme/components';
+import { theme } from '../../components/theme/theme';
+import { Image, Box, Text, Icon, Input, Button } from '../../components/theme/components';
 
-const LOGO_ALURA_URL = 'http://placehold.it/94x44';
-const SIDE_IMAGE_URL = 'http://placehold.it/2878x1640';
+const LOGO_ALURA_URL = '/images/alura-logo.svg';
+const SIDE_IMAGE_URL = '/images/alura-cases.png';
+
 
 function SideImage() {
     return (
@@ -176,56 +177,58 @@ export default function HomeScreen() {
                                             },
                                         }}
                                     >
-                                        <Text
-                                            styleSheet={{
-                                                textVariant:
-                                                    theme.typography.variants
-                                                        .body4,
-                                                fontWeight: '600',
-                                                borderRadius: theme.space.x64,
-                                                color: theme.colors.primary[
-                                                    '400'
-                                                ],
-                                                backgroundColor:
-                                                    theme.colors.primary['100'],
-                                                paddingHorizontal:
-                                                    theme.space['x2.5'],
-                                                paddingVertical:
-                                                    theme.space['x1'],
-                                                marginRight: theme.space.x2,
-                                                marginBottom: {
-                                                    xs: theme.space.x2,
-                                                    sm: theme.space.x0,
-                                                },
-                                            }}
-                                        >
-                                            O que tem de novo?
-                                        </Text>
-                                        <Text
-                                            styleSheet={{
-                                                textVariant:
-                                                    theme.typography.variants
-                                                        .body4,
-                                                fontWeight: '600',
-                                                display: 'inline-flex',
-                                                borderRadius: theme.space.x64,
-                                                color: theme.colors.primary[
-                                                    '400'
-                                                ],
-                                                alignItems: 'center',
-                                            }}
-                                        >
-                                            <Text>
-                                                Confira as principais dúvidas
-                                            </Text>
-                                            <Icon
+                                        <>
+                                            <Text
                                                 styleSheet={{
-                                                    iconVariant: 'chevronRight',
-                                                    marginLeft: theme.space.xpx,
+                                                    textVariant:
+                                                        theme.typography.variants
+                                                            .body4,
+                                                    fontWeight: '600',
+                                                    borderRadius: theme.space.x64,
+                                                    color: theme.colors.primary[
+                                                        '400'
+                                                    ],
+                                                    backgroundColor:
+                                                        theme.colors.primary['100'],
+                                                    paddingHorizontal:
+                                                        theme.space['x2.5'],
+                                                    paddingVertical:
+                                                        theme.space['x1'],
+                                                    marginRight: theme.space.x2,
+                                                    marginBottom: {
+                                                        xs: theme.space.x2,
+                                                        sm: theme.space.x0,
+                                                    },
                                                 }}
-                                                aria-hidden="true"
-                                            />
-                                        </Text>
+                                            >
+                                                O que tem de novo?
+                                            </Text>
+                                            <Text
+                                                styleSheet={{
+                                                    textVariant:
+                                                        theme.typography.variants
+                                                            .body4,
+                                                    fontWeight: '600',
+                                                    display: 'inline-flex',
+                                                    borderRadius: theme.space.x64,
+                                                    color: theme.colors.primary[
+                                                        '400'
+                                                    ],
+                                                    alignItems: 'center',
+                                                }}
+                                            >
+                                                <Text>
+                                                    Confira as principais dúvidas
+                                                </Text>
+                                                <Icon
+                                                    styleSheet={{
+                                                        iconVariant: 'chevronRight',
+                                                        marginLeft: theme.space.xpx,
+                                                    }}
+                                                    aria-hidden="true"
+                                                />
+                                            </Text>
+                                        </>
                                     </Link>
                                 </Box>
                                 <Box

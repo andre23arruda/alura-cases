@@ -1,5 +1,5 @@
-import { theme } from '../../../theme/theme';
-import { Box, Text } from '../../../theme/components';
+import { theme } from "../theme/theme";
+import { Box, Text, Year } from "../theme/components";
 
 export default function Footer() {
     return (
@@ -33,7 +33,7 @@ export default function Footer() {
                         color: theme.colors.neutral[400],
                     }}
                 >
-                    &copy; {new Date().getFullYear()} DevSoutinho. Todos os
+                    &copy; <Year /> ²Arruda. Todos os
                     direitos reservados.
                 </Text>
             </Box>

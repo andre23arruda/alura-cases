@@ -275,3 +275,7 @@ export function Button({ as, styleSheet, ...props }) {
 Button.defaultProps = {
     styleSheet: {},
 };
+
+export function Year() {
+	return <>{ new Date().getFullYear() }</>
+}
