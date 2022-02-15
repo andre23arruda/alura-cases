@@ -1,5 +1,5 @@
-import Head from "next/head"
 import Link from "../src/components/Link"
+import PageTitle from "../src/components/Title"
 
 // export async function getServerSideProps(context) {
 //     console.log('Em modo DEV sempre roda a cada acesso')
@@ -26,9 +26,7 @@ export default function FaqPage({ faq }) {
     // console.log(faq)
     return (
         <>
-            <Head>
-                <title>FAQ - Alura Cases</title>
-            </Head>
+            <PageTitle>FAQ - Alura Cases</PageTitle>
 
             <div>
                 <h1>Alura Cases - FAQ</h1>
